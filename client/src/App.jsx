@@ -6,6 +6,7 @@ import RaiseComplaint from "./components/RaiseComplaint";
 import ContactUs from "./components/Contactus";
 import Dashboard from "./components/Dashboard";
 import LocationDecoder from "./components/LocationDecoder";
+import VideoCapture from "./components/VideoCapture";
 // import AIVideoConsultation from "./components/AIVideoConsultation";
 // import CareerForm from "./components/CareerForm";
 // import GetJobs from "./components/GetJobs";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/ai" element={<LocationDecoder />} />
+        <Route path="/video" element={<VideoCapture />} />
        
       </Routes>
     </Router>
