@@ -92,7 +92,7 @@ const LandingPage = () => {
     formData.append("location", geoLocation);  // Add geolocation if available
 
     try {
-      const response = await fetch("https://vigilantai.onrender.com0/api/emergency", {
+      const response = await fetch("https://vigilantai.onrender.com/api/emergency", {
         method: "POST",
         body: formData,
       });
