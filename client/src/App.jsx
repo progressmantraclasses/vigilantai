@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import CrimeHotspotPage from "./components/CrimeHotspotPage";
 import RaiseComplaint from "./components/RaiseComplaint";
-import ContactUs from "./components/Contactus";
+import ContactUs from "./components/ContactUs";
 import Dashboard from "./components/Dashboard";
 import LocationDecoder from "./components/LocationDecoder";
 import VideoCapture from "./components/VideoCapture";
