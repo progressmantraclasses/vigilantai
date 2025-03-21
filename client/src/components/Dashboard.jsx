@@ -16,9 +16,9 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const contactRes = await axios.get("http://localhost:5000/api/contact");
-        const reportRes = await axios.get("http://localhost:5000/api/reports");
-        const emergencyRes = await axios.get("http://localhost:5000/api/emergency");
+        const contactRes = await axios.get("https://vigilantai.onrender.com/api/contact");
+        const reportRes = await axios.get("https://vigilantai.onrender.com/api/reports");
+        const emergencyRes = await axios.get("https://vigilantai.onrender.com/api/emergency");
 
         setContacts(contactRes.data);
         setReports(reportRes.data);
