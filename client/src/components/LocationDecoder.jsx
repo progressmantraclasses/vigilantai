@@ -17,7 +17,7 @@ const LocationForm = () => {
     setLoading(true);
     setError(null);
     try {
-      const res = await axios.get(`http://localhost:5000/api/reverse-geocode?lat=${latitude}&lon=${longitude}`);
+      const res = await axios.get(`https://vigilantai.onrender.com/api/reverse-geocode?lat=${latitude}&lon=${longitude}`);
       setAddress(res.data.address);
     } catch (err) {
       setError("Failed to fetch location.");
