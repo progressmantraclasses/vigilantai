@@ -1,0 +1,11 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      { "type": "Feature", "properties": { "location": "Connaught Place", "time": "10:45 PM", "type": "Robbery", "intensity": 7 }, "geometry": { "type": "Point", "coordinates": [77.2090, 28.6139] } },
+      { "type": "Feature", "properties": { "location": "Karol Bagh", "time": "2:30 AM", "type": "Assault", "intensity": 6 }, "geometry": { "type": "Point", "coordinates": [77.1882, 28.6507] } },
+      { "type": "Feature", "properties": { "location": "South Extension", "time": "9:15 PM", "type": "Snatching", "intensity": 5 }, "geometry": { "type": "Point", "coordinates": [77.2202, 28.5665] } },
+      { "type": "Feature", "properties": { "location": "Old Delhi", "time": "11:30 PM", "type": "Theft", "intensity": 8 }, "geometry": { "type": "Point", "coordinates": [77.2315, 28.6562] } },
+      { "type": "Feature", "properties": { "location": "Lajpat Nagar", "time": "8:00 PM", "type": "Chain Snatching", "intensity": 6 }, "geometry": { "type": "Point", "coordinates": [77.2425, 28.5672] } }
+    ]
+  }
+  
