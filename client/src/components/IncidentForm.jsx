@@ -1,7 +1,5 @@
 // src/components/IncidentForm.js
 import React, { useState, useEffect } from 'react';
-import getWeb3 from '../utils/web3';
-import getContract from '../utils/contract';
 import { ethers } from "ethers";
 import { keccak256, toUtf8Bytes } from "ethers";
 import "./IncidentForm.css"
