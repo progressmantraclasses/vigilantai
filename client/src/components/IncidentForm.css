@@ -1,0 +1,104 @@
+/* General Form Styling */
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form Title */
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Success Message */
+  .success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-left: 5px solid #28a745;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Form Groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Labels */
+  .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  /* Input Fields & Textareas */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  /* Checkbox */
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox label {
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Error Message */
+  .error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-left: 5px solid #dc3545;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .form-container {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  
