@@ -30,7 +30,7 @@ export default function LandingPage() {
           {[{ key: "1", icon: <HomeOutlined />, label: "Home", onClick: () => navigate("/") },
             { key: "2", icon: <InfoCircleOutlined />, label: "Features", onClick: scrollToFeatures },
             { key: "3", icon: <DashboardOutlined />, label: "Dashboard", onClick: () => navigate("/dashboard") },
-            { key: "4", icon: <VideoCameraOutlined />, label: "Live CCTV", onClick: () => navigate("/video") }
+            { key: "4", icon: <VideoCameraOutlined />, label: "Live CCTV", onClick: () => navigate("/video") },
             { key: "5", icon: <FileTextOutlined />, label: "Raise Complaint", onClick: () => navigate("/complaint") },
             { key: "6", icon: <SafetyOutlined />, label: "Legal Assistance", onClick: () => navigate("/legal-assistance") },
             { key: "7", icon: <FireOutlined />, label: "Heatmap", onClick: () => navigate("/heatmap") },
