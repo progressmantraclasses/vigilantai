@@ -10,14 +10,44 @@ import VideoCapture from "./components/VideoCapture";
 import Video from "./components/Video";
 import Avtar from "./components/Avtar";
 import FitbitIntegration from "./components/WearableDevice";
-import Web3 from './utils/Web3'; // if file is named 'Web3.js'
-
+import getWeb3 from "./utils/web3";
 import { getContract } from "./utils/contractUtils";
 import IncidentForm from "./components/IncidentForm";
 import IncidentViewer from "./components/IncidentViewer";
 
-
 function App() {
+  const [web3, setWeb3] = useState(null);
+  const [accounts, setAccounts] = useState([]);
+  const [contract, setContract] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [adminAddress, setAdminAddress] = useState("");
+
+  useEffect(() => {
+    const initialize = async () => {
+      try {
+        const web3Instance = await getWeb3();
+        setWeb3(web3Instance);
+
+        const accounts = await web3Instance.eth.getAccounts();
+        setAccounts(accounts);
+
+        const { instance } = await getContract(web3Instance);
+        setContract(instance);
+
+        const admin = await instance.methods.admin().call();
+        setAdminAddress(admin);
+      } catch (error) {
+        console.error("Failed to load web3, accounts, or contract:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    initialize();
+  }, []);
+
+  if (error) return <div className="error">{error}</div>;
+
   return (
     <Router>
       <Routes>
@@ -31,7 +61,7 @@ function App() {
           <Route path="/crime-prediction" element={<Video />} />
         <Route path="/video" element={<VideoCapture />} />
          <Route path="/wearable" element={<FitbitIntegration />} />
-
+        
           <Route
             path="/blockchain"
             element={
@@ -43,6 +73,17 @@ function App() {
           />
        
       </Routes>
+       {accounts[0] === adminAddress && (
+          <div className="admin-panel">
+            <h2>Admin Panel</h2>
+            <p>Additional administrative features can be added here</p>
+          </div>
+        )}
+
+        {/* <footer>
+          <p>System Admin: {adminAddress}</p>
+        </footer> */}
+      </div>
     </Router>
   );
 }
