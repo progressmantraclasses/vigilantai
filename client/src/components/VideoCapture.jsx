@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const { Header, Content, Footer } = Layout;
 
-const VideoUpload = () => {
+const VideoCapture = () => {
   const navigate = useNavigate();
   const [video, setVideo] = useState(null);
   const [prediction, setPrediction] = useState(null);
@@ -114,4 +114,4 @@ const VideoUpload = () => {
   );
 };
 
-export default VideoUpload;
+export default VideoCapture;
