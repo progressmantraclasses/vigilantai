@@ -19,7 +19,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/location" element={<LocationDecoder />} />
-          <Route path="/ai" element={<Video />} />
+          <Route path="/crime-prediction" element={<Video />} />
         <Route path="/video" element={<VideoCapture />} />
        
       </Routes>
