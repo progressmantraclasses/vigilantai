@@ -65,19 +65,13 @@ function App() {
             path="/blockchain"
             element={
               <div className="container">
-                <IncidentForm contract={contract} accounts={accounts} />
-                <IncidentViewer contract={contract} />
+                <IncidentForm  />
+                <IncidentViewer />
               </div>
             }
           />
        
       </Routes>
-       {accounts[0] === adminAddress && (
-          <div className="admin-panel">
-            <h2>Admin Panel</h2>
-            <p>Additional administrative features can be added here</p>
-          </div>
-        )}
       </div>
     </Router>
   );
