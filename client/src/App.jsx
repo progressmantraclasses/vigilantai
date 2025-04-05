@@ -9,6 +9,11 @@ import LocationDecoder from "./components/LocationDecoder";
 import VideoCapture from "./components/VideoCapture";
 import Video from "./components/Video";
 import Avtar from "./components/Avtar";
+import FitbitIntegration from "./components/WearableDevice";
+import getWeb3 from "./utils/web3";
+import { getContract } from "./utils/contractUtils";
+import IncidentForm from "./components/IncidentForm";
+import IncidentViewer from "./components/IncidentViewer";
 
 function App() {
   return (
@@ -23,6 +28,17 @@ function App() {
         <Route path="/location" element={<LocationDecoder />} />
           <Route path="/crime-prediction" element={<Video />} />
         <Route path="/video" element={<VideoCapture />} />
+         <Route path="/wearable" element={<FitbitIntegration />} />
+
+          <Route
+            path="/blockchain"
+            element={
+              <div className="container">
+                <IncidentForm contract={contract} accounts={accounts} />
+                <IncidentViewer contract={contract} />
+              </div>
+            }
+          />
        
       </Routes>
     </Router>
