@@ -14,7 +14,7 @@ export default function LandingPage() {
     { title: "Safer Route Suggestions", description: "AI recommends alternative routes based on crime data and surveillance.", icon: <DashboardOutlined />, link: "/heatmap" },
     { title: "Emergency Panic Alerts", description: "Trigger alerts via button press, voice command, or gesture.", icon: <PhoneOutlined />, link: "/complaint" },
     { title: "Legal Assistance Chatbot", description: "Provides easy-to-understand legal rights and support.", icon: <FileTextOutlined />, link: "/legal-assistance" },
-    { title: "Decentralized Security", description: "Blockchain ensures anonymous and tamper-proof incident reporting.", icon: <UserOutlined />, link: "/dashboard" }
+    { title: "Decentralized Security", description: "Blockchain ensures anonymous and tamper-proof incident reporting.", icon: <UserOutlined />, link: "/blockchain" }
   ];
 
   const scrollToFeatures = () => {
