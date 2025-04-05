@@ -8,6 +8,7 @@ import Dashboard from "./components/Dashboard";
 import LocationDecoder from "./components/LocationDecoder";
 import VideoCapture from "./components/VideoCapture";
 import Video from "./components/Video";
+import Avtar from "./components/Avtar";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/heatmap" element={<CrimeHotspotPage />} />
         <Route path="/complaint" element={<RaiseComplaint />} />
         <Route path="/contact" element={<ContactUs />} />
+         <Route path="/legal-assistance" element={<Avtar />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/location" element={<LocationDecoder />} />
           <Route path="/crime-prediction" element={<Video />} />
