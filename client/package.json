@@ -30,6 +30,8 @@
     "recharts": "^2.15.1",
     "socket.io-client": "^4.8.1",
     "three": "^0.174.0"
+    "@heygen/streaming-avatar": "^0.1.8",
+    "react-speech-recognition": "^3.10.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
