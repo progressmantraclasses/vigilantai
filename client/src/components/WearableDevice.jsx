@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+/*
+  import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import OAuthPopup from 'react-oauth-popup';
 import './WearableIntegration.css';
@@ -793,4 +794,4 @@ const FitbitIntegration = () => {
   );
 };
 
-export default FitbitIntegration;
+export default FitbitIntegration; */
