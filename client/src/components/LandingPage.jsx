@@ -11,10 +11,10 @@ export default function LandingPage() {
   const features = [  
     { title: "AI Crime Detection", description: "Identifies fights, theft, and vandalism from CCTV and mobile recordings.", icon: <SafetyOutlined />, link: "/ai" },
     { title: "Real-Time Alerts", description: "Sends instant notifications to law enforcement and security teams.", icon: <FireOutlined />, link: "/video" },
-    { title: "Safer Route Suggestions", description: "AI recommends alternative routes based on crime data and surveillance.", icon: <DashboardOutlined />, link: "/features#route-suggestions" },
+    { title: "Safer Route Suggestions", description: "AI recommends alternative routes based on crime data and surveillance.", icon: <DashboardOutlined />, link: "/dashboard" },
     { title: "Emergency Panic Alerts", description: "Trigger alerts via button press, voice command, or gesture.", icon: <PhoneOutlined />, link: "/complaint" },
-    { title: "Legal Assistance Chatbot", description: "Provides easy-to-understand legal rights and support.", icon: <FileTextOutlined />, link: "/features#legal-assistance" },
-    { title: "Decentralized Security", description: "Blockchain ensures anonymous and tamper-proof incident reporting.", icon: <UserOutlined />, link: "/features#decentralized-security" }
+    { title: "Legal Assistance Chatbot", description: "Provides easy-to-understand legal rights and support.", icon: <FileTextOutlined />, link: "/legal-assistance" },
+    { title: "Decentralized Security", description: "Blockchain ensures anonymous and tamper-proof incident reporting.", icon: <UserOutlined />, link: "/crime-prediction" }
   ];
 
   const scrollToFeatures = () => {
