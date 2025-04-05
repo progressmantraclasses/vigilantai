@@ -15,6 +15,7 @@ import { getContract } from "./utils/contractUtils";
 import IncidentForm from "./components/IncidentForm";
 import IncidentViewer from "./components/IncidentViewer";
 
+
 function App() {
   return (
     <Router>
