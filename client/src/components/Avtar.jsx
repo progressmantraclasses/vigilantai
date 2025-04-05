@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+/*import React, { useState, useRef, useEffect } from "react";
 import StreamingAvatar, { AvatarQuality, StreamingEvents, TaskType } from "@heygen/streaming-avatar";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import './Avtar.css'; // Import CSS file
@@ -340,4 +340,4 @@ const LegalAdvisorAvatar = () => {
   );
 };
 
-export default LegalAdvisorAvatar;
+export default LegalAdvisorAvatar;*/
