@@ -1,5 +1,5 @@
 import { Layout, Menu, Button, Card } from 'antd';
-import { HomeOutlined, InfoCircleOutlined, PhoneOutlined, SafetyOutlined, FileTextOutlined, DashboardOutlined, FireOutlined, UserOutlined } from '@ant-design/icons';
+import { HomeOutlined, InfoCircleOutlined, PhoneOutlined, SafetyOutlined, FileTextOutlined, DashboardOutlined,  VideoCameraOutlined, FireOutlined, UserOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,10 +9,10 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   const features = [  
-    { title: "AI Crime Detection", description: "Identifies fights, theft, and vandalism from CCTV and mobile recordings.", icon: <SafetyOutlined />, link: "/features#crime-detection" },
-    { title: "Real-Time Alerts", description: "Sends instant notifications to law enforcement and security teams.", icon: <FireOutlined />, link: "/features#real-time-alerts" },
+    { title: "AI Crime Detection", description: "Identifies fights, theft, and vandalism from CCTV and mobile recordings.", icon: <SafetyOutlined />, link: "/ai" },
+    { title: "Real-Time Alerts", description: "Sends instant notifications to law enforcement and security teams.", icon: <FireOutlined />, link: "/video" },
     { title: "Safer Route Suggestions", description: "AI recommends alternative routes based on crime data and surveillance.", icon: <DashboardOutlined />, link: "/features#route-suggestions" },
-    { title: "Emergency Panic Alerts", description: "Trigger alerts via button press, voice command, or gesture.", icon: <PhoneOutlined />, link: "/features#panic-alerts" },
+    { title: "Emergency Panic Alerts", description: "Trigger alerts via button press, voice command, or gesture.", icon: <PhoneOutlined />, link: "/complaint" },
     { title: "Legal Assistance Chatbot", description: "Provides easy-to-understand legal rights and support.", icon: <FileTextOutlined />, link: "/features#legal-assistance" },
     { title: "Decentralized Security", description: "Blockchain ensures anonymous and tamper-proof incident reporting.", icon: <UserOutlined />, link: "/features#decentralized-security" }
   ];
@@ -30,11 +30,12 @@ export default function LandingPage() {
           {[{ key: "1", icon: <HomeOutlined />, label: "Home", onClick: () => navigate("/") },
             { key: "2", icon: <InfoCircleOutlined />, label: "Features", onClick: scrollToFeatures },
             { key: "3", icon: <DashboardOutlined />, label: "Dashboard", onClick: () => navigate("/dashboard") },
-            { key: "4", icon: <FileTextOutlined />, label: "Raise Complaint", onClick: () => navigate("/complaint") },
-            { key: "5", icon: <SafetyOutlined />, label: "Legal Assistance", onClick: () => navigate("/legal-assistance") },
-            { key: "6", icon: <FireOutlined />, label: "Heatmap", onClick: () => navigate("/heatmap") },
-            { key: "7", icon: <UserOutlined />, label: "Wearable Integration", onClick: () => navigate("/wearable") },
-            { key: "8", icon: <PhoneOutlined />, label: "Contact", onClick: () => navigate("/contact") }].map(item => (
+            { key: "4", icon: <VideoCameraOutlined />, label: "Live CCTV", onClick: () => navigate("/video") }
+            { key: "5", icon: <FileTextOutlined />, label: "Raise Complaint", onClick: () => navigate("/complaint") },
+            { key: "6", icon: <SafetyOutlined />, label: "Legal Assistance", onClick: () => navigate("/legal-assistance") },
+            { key: "7", icon: <FireOutlined />, label: "Heatmap", onClick: () => navigate("/heatmap") },
+            { key: "8", icon: <UserOutlined />, label: "Wearable Integration", onClick: () => navigate("/wearable") },
+            { key: "9", icon: <PhoneOutlined />, label: "Contact", onClick: () => navigate("/contact") }].map(item => (
             <Menu.Item key={item.key} icon={item.icon} onClick={item.onClick} className="relative group cursor-pointer">
               {item.label}
               <motion.div 
