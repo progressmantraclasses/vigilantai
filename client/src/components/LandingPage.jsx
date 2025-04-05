@@ -1,5 +1,5 @@
 import { Layout, Menu, Button, Card } from 'antd';
-import { HomeOutlined, InfoCircleOutlined, PhoneOutlined, SafetyOutlined, FileTextOutlined, DashboardOutlined,  VideoCameraOutlined, FireOutlined, UserOutlined } from '@ant-design/icons';
+import { HomeOutlined, InfoCircleOutlined, PhoneOutlined, SafetyOutlined, FileTextOutlined, DashboardOutlined,  VideoCameraOutlined, FireOutlined, AlertOutlined, UserOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
@@ -31,11 +31,12 @@ export default function LandingPage() {
             { key: "2", icon: <InfoCircleOutlined />, label: "Features", onClick: scrollToFeatures },
             { key: "3", icon: <DashboardOutlined />, label: "Dashboard", onClick: () => navigate("/dashboard") },
             { key: "4", icon: <VideoCameraOutlined />, label: "Live CCTV", onClick: () => navigate("/video") },
-            { key: "5", icon: <FileTextOutlined />, label: "Raise Complaint", onClick: () => navigate("/complaint") },
-            { key: "6", icon: <SafetyOutlined />, label: "Legal Assistance", onClick: () => navigate("/legal-assistance") },
-            { key: "7", icon: <FireOutlined />, label: "Heatmap", onClick: () => navigate("/heatmap") },
-            { key: "8", icon: <UserOutlined />, label: "Wearable Integration", onClick: () => navigate("/wearable") },
-            { key: "9", icon: <PhoneOutlined />, label: "Contact", onClick: () => navigate("/contact") }].map(item => (
+             { key: "5", icon: <AlertOutlined />, label: "Crime Prediction", onClick: () => navigate("/crime-prediction") },
+            { key: "6", icon: <FileTextOutlined />, label: "Raise Complaint", onClick: () => navigate("/complaint") },
+            { key: "7", icon: <SafetyOutlined />, label: "Legal Assistance", onClick: () => navigate("/legal-assistance") },
+            { key: "8", icon: <FireOutlined />, label: "Heatmap", onClick: () => navigate("/heatmap") },
+            { key: "9", icon: <UserOutlined />, label: "Wearable Integration", onClick: () => navigate("/wearable") },
+            { key: "10", icon: <PhoneOutlined />, label: "Contact", onClick: () => navigate("/contact") }].map(item => (
             <Menu.Item key={item.key} icon={item.icon} onClick={item.onClick} className="relative group cursor-pointer">
               {item.label}
               <motion.div 
