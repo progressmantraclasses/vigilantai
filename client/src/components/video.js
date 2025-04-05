@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const { Header, Content, Footer } = Layout;
 
-const LiveCCTVAnalysis = () => {
+const Video = () => {
   const videoRef = useRef(null); // To reference the video element
   const [prediction, setPrediction] = useState(null);
   const [inferenceTime, setInferenceTime] = useState(null);
@@ -138,4 +138,4 @@ const LiveCCTVAnalysis = () => {
   );
 };
 
-export default LiveCCTVAnalysis;
+export default Video;
