@@ -50,6 +50,7 @@ function App() {
 
   return (
     <Router>
+       <div className="App">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/heatmap" element={<CrimeHotspotPage />} />
@@ -79,10 +80,6 @@ function App() {
             <p>Additional administrative features can be added here</p>
           </div>
         )}
-
-        {/* <footer>
-          <p>System Admin: {adminAddress}</p>
-        </footer> */}
       </div>
     </Router>
   );
