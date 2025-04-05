@@ -8,13 +8,6 @@ import Dashboard from "./components/Dashboard";
 import LocationDecoder from "./components/LocationDecoder";
 import VideoCapture from "./components/VideoCapture";
 import Video from "./components/Video";
-// import AIVideoConsultation from "./components/AIVideoConsultation";
-// import CareerForm from "./components/CareerForm";
-// import GetJobs from "./components/GetJobs";
-// import CareerPath from "./components/CareerPath";
-// import CareerMentor from "./components/CareerMentor";
-// import LearningRoadmap from "./components/LearningRoadmap";
-
 
 function App() {
   return (
