@@ -10,8 +10,6 @@ import VideoCapture from "./components/VideoCapture";
 import Video from "./components/Video";
 import Avtar from "./components/Avtar";
 import FitbitIntegration from "./components/WearableDevice";
-import getWeb3 from "./utils/web3";
-import { getContract } from "./utils/contractUtils";
 import IncidentForm from "./components/IncidentForm";
 import IncidentViewer from "./components/IncidentViewer";
 
